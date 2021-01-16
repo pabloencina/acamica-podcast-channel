@@ -20,7 +20,7 @@
                         "contenedor2 contenedor2"
                         "footer footer";
 }
-
+/*Barra de navegación*/
 nav{
     grid-area: nav;
     width: 100%;
@@ -29,10 +29,10 @@ nav{
     justify-content: flex-end;
 }
 #btn-menu{
-    /*display: none;*/
+    display: none;
 }
 label{
-    /*display: none;*/
+    display: none;
 }
  .cont{
     width: 60%;
@@ -132,7 +132,9 @@ div p {
     text-align: center;
     line-height: 1.5em;
 }
-
+#boton:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
 
 
 main{
@@ -164,12 +166,12 @@ main .ep{
     padding-left: 15%;
 }
 
-
+/* ***De dónde venimos *** */
 aside{
     grid-area: aside;
     width: 100%; 
     position: relative; z-index:1 ;/* desplazamiento en el eje y de la seccion aside*/
-    top: -12.5rem;
+    top: -200px;
 }
 div .contenedor03{
     display: flex;
@@ -197,12 +199,12 @@ div .contenedor03{
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
-
+/* *** Imágenes*** */
 section{
     grid-area: section;
     width: 100%;
-    
-    
+    position: relative; z-index:1 ;/* desplazamiento en el eje y de la seccion section*/
+    top: -100px;
 }
 .invitados{
     display: flex;
@@ -215,24 +217,30 @@ section{
     letter-spacing: 0;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     width: 30.0625rem;
-    height: 3.875rem;
+    height: 62px;
     padding-left: 15%;
     
 }
-
+/* ***Algunos de nuestros temas *** */
 article{
     grid-area: article;
     width: 100%;
     display:flex;
     flex-wrap: wrap;
-    height:300px;
-    align-items:flex-end;
-    justify-content: space-evenly;
+    height:200px;
+   /* align-items:flex-end;*/
+    /*justify-content: space-evenly;*/
+    justify-content: center;
+    position: relative; z-index:1 ;/* desplazamiento en el eje y de la seccion section*/
+    top: -100px;
     
 }
 .tem{
     width: 100%;
     height: 200px;
+    padding-top: 100px;
+    position: relative; z-index:1 ;/* desplazamiento en el eje y de la seccion section*/
+    top: -100px;
 }
 #temas{
     grid-area: temas;
@@ -243,8 +251,7 @@ article{
     width: 36.625rem;
     height: 3.875rem;
     padding-left: 12.5rem;
-    display:inline;
-    
+    display:inline; 
 }
 .descr{
     font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -256,47 +263,55 @@ article{
     text-align: center;
     width: 11.875rem;
     height: 4rem;
-    margin: auto;
-    
+    margin: auto;   
 }
  .imagen{
     display: flex;
     margin-left: auto; 
     margin-right: auto;
-   
+    
 }
-/* Anteultima parte de la Pagina*/
+.caja1{
+   width:240px ;
+   height: ;
+}
+/* ***Escuchá los episodios *** */
  #contenedor2{
      grid-area: contenedor2;
      width: 100%;
-    height:31.25rem ;
+    height:518px ;
     display: flex;
     align-items: center;
     clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    position: relative; z-index:1 ;/* desplazamiento en el eje y de la seccion section*/
+    top: -100px;
 }
+
 .novedades{
     color: white;
     width: 100%;
-    /*font-size: 1em;*/
+    height:100px ;
     letter-spacing: 0;
     display: inline-block;
     /*padding-left: 30vw;*/
     align-content: center;
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    align-items: center; 
 }
 #cont2{
-    width: 43.25rem;
-    height: 3.875rem;
-    margin-top:150px;
-    font-size: 2rem;
+    display: inline;
+    width: 100%;
+    height: 62px;
+    align-items: center;
+    font-size: 32px;
     color: #FFFFFF;
     letter-spacing: 0;
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
     font-family: 'IBM Plex Sans Condensed';  
-    
+}
+#cont2 > h1 {
+   padding-bottom: -200px;
 }
 #esc{
     background-color: #00f3bb;
@@ -312,18 +327,23 @@ article{
     line-height: 24px;   
     margin-top: 50px;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto; 
 }
+
 
 
 footer{
     grid-area: footer;
-    height: 15vh;
+    
     display: flex;
    justify-content: flex-end;
    align-items: center;
+   justify-content: center;
    width: 100%;
    height:5rem ;
+   position: relative; z-index:1 ;/* desplazamiento en el eje y de la seccion section*/
+   top: -100px;
+   border-bottom: 1px solid black;
 }
 footer p1{
     font-size: 16px;
@@ -342,13 +362,20 @@ footer p1{
 
 
 @media screen and (max-width: 360px){
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: content-box;
+        
+    }
     body{
         box-sizing: content-box;
         
         padding:1%;
         font-size: 0.875rem;
     }
-    /* Menú hamburguesa*/
+    /***** Menú hamburguesa/ barra de navegación************/
      .cont{ 
        position: absolute;
        flex-direction: column;
@@ -356,13 +383,16 @@ footer p1{
        color: white;
        height: 224px;
        background-color: #0000EC;
-       /*margin-right: -640px;*/
+       margin-right: -640px;
        margin-top: 44px;
        display: flex; 
-       align-content: flex-start;    
+       align-content: flex-start; 
+       /*otra manera de hacer */
+        /*display: none;*/
+        /* otra manera de hacer*/
     }
-    .cont:hover{
-        cursor: pointer;
+     label #la-btn:hover{
+        display: block;
     }
     li{
         width: 320px;
@@ -376,7 +406,6 @@ footer p1{
     #btn-menu:checked  ~ .cont{
         margin: 300px;  
     }
-    
     #btn-menu{
         /*display: none;*/
     }
@@ -409,48 +438,333 @@ footer p1{
        /* cursor: pointer;*/
     }
     
-     label:hover{
+     label #la-btn:hover{
         cursor: pointer;
         /*display: flex;
         justify-content: flex-end;*/
     }
-    div p{
-        line-height: 22px;
-        font-size: 14px;
-        width:350px;
-        height: 66px;
-        margin-left: -16%;
-        padding-right: 1px;
-        /*background-color: slateblue;*/
+    /*******Hello World ********/
+
+    header{
+        width: 100%;
+        grid-area: header;
+        height: 25rem;
+        width: 100%; 
+        display: block; 
+        margin-top: -60px;
     }
     .hello{
-        /*display: flex;
-        flex-wrap: wrap;*/
-        display: block;
-        font-size: 2.25rem;
+        display: inline-block;
+        font-size: 2.6em;
         color: #060A24;
-        letter-spacing:0 ;
-        margin-left: -60px;
-        /*width: 101px;
-        height: 42px;*/
-        line-height: 42px;
+        letter-spacing: 0;
     }
+    .header{
+        
+        line-height: 5em;
+    }
+    #punto{
+        font-family: IBMPlexSans;
+        font-size: 4em;
+        color: #0000EC;
+        letter-spacing: 0; 
+    }
+    #world{
+        text-decoration: line-through;
+        line-height: 5em;
+        height:42px ;
+        width: 101px;
+    }
+    #inform{
+        width: 100%;
+        height: 70px;
+        margin: 3px;
+    }
+    div p {
+        font-size: 14px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+        display: inline-block;
+        width: 288px;
+        height: 66px;
+        /*position: relative;*/
+        font-family: 'IBM Plex Mono', monospace;
+    }
+    #boton{
+        background-color: #00f3bb;
+        /*position: relative;*/
+        display: flex;
+        justify-content: center;
+        width: 288px;
+        height: 48px;
+        font-family: 'IBM Plex Mono', medium;
+        color: #060A24;
+        font-size: 1em;
+        letter-spacing: 0px;
+        text-align: center;
+        line-height: 1.5em;
+    }
+    #boton:hover{
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    }
+    
+    /* *** Enláces *** */
     main{
-        margin-top: 6.25rem;
         box-sizing: content-box;
         grid-area: main;
-        border: 1px solid rgb(238, 24, 24);
+        width: 100%;
+        height: 800px;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        clip-path:polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+    }
+    
+    div .imagenes{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100vh;
+        justify-content: space-evenly;
+        
+    }
+    main .ep{
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-size: 3rem;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        margin-top: 15%;
+        width: 13.0625rem;
+        height: 3.875rem;
+        padding-left: 25px;
+    }
+    main{
+        /*margin-top: 6.25rem;*/
+        box-sizing: content-box;
+        grid-area: main;
         width: 22.5rem;
         height: 76rem;
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
         clip-path:polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
     }
+    main .ep{
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-size: 36px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        margin-top: 15%;
+        width: 157px;
+        height: 50px;
+       
+    }
     div .imagenes{
-        display: flex;
-        flex-wrap: wrap;
-        width: 298px;
-        height: 225px;
-        justify-content: space-evenly;
-        
-}
+        display: block;
+        justify-content: space-evenly;  
+    }
+     div img{
+        width: 298px; 
+        height:220px;
+        padding: 10px;
+        margin: 0;
+    }
 
+    /* *** Imágen con texto*** */
+
+    aside{
+        grid-area: aside;
+        width: 100%; 
+        position: relative; z-index:1 ;/* desplazamiento en el eje y de la seccion aside*/
+        top: -12.5rem;
+    }
+    div .contenedor03{
+        display: block;
+        flex-wrap: wrap;   
+    }
+    .row img{
+        width: 360px;
+        height: 519px;
+        padding-right: 50px;
+        
+    }
+    .column{
+        justify-content: center;
+        align-self: center;
+        padding-left: 10%;
+    }
+    .parrafo{
+        width: 288px;
+        height: 254px;
+        padding-left: 10px;
+    }
+    .titulo{
+        display: block;
+        width: 275px;
+        height: 90px;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        padding-left: 20px;
+    }
+
+    /* ***Imágenes ****/
+    section{
+        grid-area: section;
+        width: 320px;
+        margin: 0;
+        padding: 0%;
+        margin-top: -120px;  
+    }
+    .invitados{
+        display:block;
+    }
+    #estelares{
+        font-size: 2rem;
+        color: #060A24;
+        letter-spacing: 0;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        width: 275px;
+        height: 90px;
+    } 
+    img{
+        display: block;
+        width: 320px;
+        height: 243px;
+    } 
+
+    /* ***Alguno de nuestros temas*** */
+
+    article{
+        grid-area: article;
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        height:700px;
+        align-items:flex-end;
+        justify-content: space-evenly;  
+    }
+    .tem{
+        display: block;
+        width: 275px;
+        height: 120px;
+        margin-top: 50px;
+    }
+    #temas{
+        grid-area: temas;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-size: 2.25rem;
+        color: #060A24;
+        letter-spacing: 0;
+        widows: 275px; ;
+        height: 90px;
+        padding-left: 12.5rem;
+        display:inline;  
+    }
+    .caja1{
+        width: 100%;
+        padding-right: 40px;
+    }
+    .imagen{
+        width: 104px;
+        height: 104px;
+        display: block;
+        padding-left: 10px; 
+     }
+    .descr{
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-size: 24px;
+        color: #060A24;
+        letter-spacing: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 11.875rem;
+        height: 4rem;
+    }  
+
+    /* ***Escuchá los episodios *** */
+
+    #contenedor2{
+        grid-area: contenedor2;
+        width: 100%;
+       height:500px ;
+       display: flex;
+       align-items: center;
+       clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+       background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+   }
+   .novedades{
+       color: white;
+       width: 100%;
+       /*font-size: 1em;*/
+       letter-spacing: 0;
+       display: inline-block;
+       /*padding-left: 30vw;*/
+       align-content: center;
+       font-family: 'IBM Plex Sans Condensed', sans-serif; 
+   }
+   #cont2{
+       width: 288px;
+       height: 126px;
+       margin-top:50px;
+       font-size: 24px;
+       color: #FFFFFF;
+       letter-spacing: 0;
+       text-align: center;
+       margin-right: auto;
+       margin-left: auto;
+       font-family: 'IBM Plex Sans Condensed';  
+       line-height: 42px;
+   }
+   #esc{
+       background-color: #00f3bb;
+       display: flex;
+       justify-content: center;
+       width: 288px;
+       height: 48px;
+       font-family: 'IBM Plex Mono', medium;
+       color: #060A24;
+       font-size: 18px;
+       letter-spacing: 0px;
+       text-align: center;
+       line-height: 24px;   
+       margin-top: 50px;
+       margin-right: auto;
+       margin-left: auto;
+   }
+   /* ***Footer *** */
+
+   footer{
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        height:5rem ;
+    }
+    footer p1{
+        font-size: 12px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 28px;
+         display: inline;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
+        width:227px ;
+        height: 22px;
+    }
+    .fab{
+        width: 18px;
+        height: 28px; 
+        padding-right: 5vw;
+        display: inline;
+    }
+    #redes{
+        display: inline;
+        justify-content: center;
+       
+        
+    }
+
+}
