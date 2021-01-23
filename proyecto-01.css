@@ -5,7 +5,6 @@
    margin: 0%;
    padding: 0%;  
 }
-
 .contenedor01{
     font-size: 1rem;
     width: 100%;
@@ -114,7 +113,7 @@ header{
     font-family: IBMPlexSans;
     font-size: 4em;
     color: #0000EC;
-    letter-spacing: 0; 
+    letter-spacing: 0;
 }
 #world{
     text-decoration: line-through;
@@ -129,6 +128,7 @@ div p {
     width: 50vw;
     height: 10vh;
     position: relative;
+    top: -20px;
     font-family: 'IBM Plex Mono', monospace;
 }
 #boton{
@@ -149,20 +149,19 @@ div p {
 
 /* *** Enlaces*** */
 main{
-    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
     grid-area: main;
-    border: 1px solid rgb(238, 24, 24);
     width: 100%;
     height: 71.875rem;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     clip-path:polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
 }
 
-div .imagenes{
-    display: flex;
-    flex-wrap: wrap;
+.imagenes{
+    background-color: springgreen;
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     justify-content: space-evenly;
     
 }
@@ -195,6 +194,8 @@ aside{
     padding-left:8% ;
     width: 457.6px;
     height: 660px;
+    position: relative;
+    left: -40px;
 }
 .column{
     justify-content: center;
@@ -202,11 +203,16 @@ aside{
     padding-left: 10%;
     width: 464px;
     height:266px ;
+    position: relative;
+    left: -40px;
     
 }
 .parrafo{
     width: 29rem;
     height: 12.75rem;
+    position: relative;
+    left: 15px;
+    top: 20px;
 }
 #titulo{
     width: 24.9375rem;
@@ -228,6 +234,8 @@ section{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    padding: 0;
+    margin: 0px;
 }
 #estelares{
     font-size: 3rem;
@@ -246,11 +254,11 @@ article{
     display:flex;
     flex-wrap: wrap;
     height:12.5rem;
-   /* align-items:flex-end;*/
-    /*justify-content: space-evenly;*/
     justify-content: center;
     position: relative; z-index:1 ;/* desplazamiento en el eje y de la seccion section*/
     top: -6.25rem;
+    margin: 0px;
+    padding: 0px;
     
 }
 .tem{
@@ -268,7 +276,9 @@ article{
     letter-spacing: 0;
     width: 36.625rem;
     height: 3.875rem;
-    padding-left: 12.5rem;
+    position: relative;
+    margin: 0px;
+    left: 20px;
     display:inline; 
 }
 .descr{
@@ -277,12 +287,12 @@ article{
     color: #060A24;
     letter-spacing: 0;
     display: flex;
-    align-items: center;
-    text-align: center;
+    justify-content: center;
     width: 11.875rem;
     height: 4rem;
-    margin: auto;   
+    margin: auto; 
 }
+
  .imagen{
     display: flex;
     margin-left: auto; 
@@ -346,9 +356,6 @@ article{
     margin-right: auto;
     margin-left: auto; 
 }
-
-
-
 footer{
     grid-area: footer;
     
@@ -410,11 +417,18 @@ footer p1{
         height: 20px;
     }
     #dib{
-        width: 24px;
-        height: 24px;
-        margin: auto;
+        width: 34px;
+        height: 34px;
+        margin: 0;
         padding: 0;
         display: flex;
+    }
+    #la-btn{
+        position: relative;
+        top: 0px;
+        right: 20px;
+        padding: 0;
+        margin: 0;
     }
      nav label{
          display: block;
@@ -423,7 +437,7 @@ footer p1{
         padding: 10px;
     }
     .cont{
-         position: absolute;
+         display: block;
          width: 320px;
          height: 214px;
          background: #0000EC;
@@ -622,17 +636,16 @@ footer p1{
     /* ***Imágenes ****/
     section{
         grid-area: section;
-        width: 20rem;
-        margin: 0;
-        padding: 0%;
-        margin-top: -7.5rem;
-        position: relative; z-index:1 ;/* desplazamiento en el eje y de la seccion section*/
-        margin-top: 100px;  
+        width: 100%;
+        margin: auto;
+        padding: auto;
+        margin-top: 6.25rem;  
     }
     .invitados{
         display:block;
-        margin:0%;
-        padding: 0;
+        margin:auto;
+        padding: auto;
+        width: 100%;
     }
     #estelares{
         font-size: 2rem;
@@ -641,9 +654,10 @@ footer p1{
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         width: 17.1875rem;
         height: 5.625rem;
-        margin-left: 3%;
+        position: relative;
+        left: -30px;
     } 
-    img{
+     .invitados img{
         display: block;
         width: 100%;
         height: 15.1875rem;
@@ -668,7 +682,8 @@ footer p1{
         display: block;
         width: 275px;
         height: 120px;
-        margin-top: 50px;
+        position: relative;
+        top: -150px;
     }
     #temas{
         grid-area: temas;
@@ -678,12 +693,12 @@ footer p1{
         letter-spacing: 0;
         width: 275px; ;
         height: 100px;
-        margin-left: 10px;
         display:inline;  
     }
     .caja1{
         width: 100%;
-        padding-right: 40px;
+        position: relative;
+        left: 0px;
     }
     .imagen{
         width: 104px;
@@ -699,7 +714,7 @@ footer p1{
         display: flex;
         align-items: center;
         text-align: center;
-        width: 11.875rem;
+        width: 100%;
         height: 4rem;
     }  
 
@@ -708,27 +723,28 @@ footer p1{
     #contenedor2{
         grid-area: contenedor2;
         width: 100%;
-       height:300px ;
+       height:290px ;
        display: flex;
-       margin-top: 75px;
-       align-items: center;
        clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+       position: relative;
+       top: -50px;
    }
    .novedades{
        color: white;
        width: 100%;
-       /*font-size: 1em;*/
        letter-spacing: 0;
        display: inline-block;
-       /*padding-left: 30vw;*/
-       align-content: center;
        font-family: 'IBM Plex Sans Condensed', sans-serif; 
    }
+    #cont2 h1{
+        position: relative;
+        font-size:2em ;
+        top: -50px;
+    }
    #cont2{
        width: 288px;
-       height: 126px;
-       margin-top:50px;
+       height: 300px;
        font-size: 24px;
        color: #FFFFFF;
        letter-spacing: 0;
@@ -737,6 +753,11 @@ footer p1{
        margin-left: auto;
        font-family: 'IBM Plex Sans Condensed';  
        line-height: 42px;
+       margin-top: 500px;
+   }
+   #escucha{
+        position: relative;
+        top:-70px ;
    }
    #esc{
        background-color: #00f3bb;
@@ -761,35 +782,37 @@ footer p1{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        align-items: center;
+        text-align: center;
         width: 100%;
-        height:5rem ;
-        /*margin-top: 50px;*/
+        height:30px ;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: 0px;
     }
     footer p1{
-        font-size: 12px;
+        font-size: 0.75rem;
         color: #060A24;
         letter-spacing: 0;
-        line-height: 28px;
-         display: inline;
-        justify-content: center;
-        align-items: center;
-        padding-left: 70px;
-        width:227px ;
-        height: 22px;
-        
+        line-height: 1.75rem;
+        display: inline;
+        width:14.1875rem ;
+        height: 1.375rem;
+        position: relative;
+        top: -40px;
+        left: 65px;
     }
     .fab{
-        width: 18px;
-        height: 28px; 
+        width: 20px;
+        height: 1.75rem; 
         padding-right: 5vw;
         display: inline;
     }
     #redes{
         display: inline;
         justify-content: center;
-       
-        
+        text-align: center;
+        position: relative;
+        top: -30px;
     }
-
 }
