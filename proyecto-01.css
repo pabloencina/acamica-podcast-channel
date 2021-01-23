@@ -249,11 +249,11 @@ section{
 /* ***Algunos de nuestros temas *** */
 article{
     grid-area: article;
-    width: 100%;
+    width: 90%;
     display:flex;
     flex-wrap: wrap;
     height:12.5rem;
-    justify-content: center;
+    justify-content: space-around;
     position: relative; z-index:1 ;/* desplazamiento en el eje y de la seccion section*/
     top: -6.25rem;
     margin: 0px;
@@ -285,11 +285,13 @@ article{
     font-size: 1.4em;
     color: #060A24;
     letter-spacing: 0;
-    display: flex;
-    justify-content: center;
-    width: 11.875rem;
-    height: 4rem;
+    position: relative;
+    left: 50px;
+    width: 40px;
+    height: 80px;
     margin: auto; 
+    font-weight:bold;
+    
 }
 
  .imagen{
@@ -300,6 +302,7 @@ article{
 }
 .caja1{
    width:15rem ;
+   justify-content: center;
 }
 /* ***Escuchá los episodios *** */
  #contenedor2{
