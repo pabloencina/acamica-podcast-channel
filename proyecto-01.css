@@ -159,10 +159,15 @@ main{
 }
 
 .imagenes{
-    background-color: springgreen;
-    width: 100%;
-    height: 130vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
     justify-content: space-evenly;
+    padding: 0;
+    margin: 0px;
+    position: relative;
+    top: -200px;
+    
     
 }
 main #ep{
@@ -179,23 +184,20 @@ main #ep{
 /* ***De dónde venimos *** */
 aside{
     grid-area: aside;
-    
     position: relative; z-index:1 ;/* desplazamiento en el eje y de la seccion aside*/
     top: -12.5rem;
+}
+.contenedor03 {
     display: flex;
     flex-wrap: wrap;
-}
-.contenedor03  div {
-    width: 158%;
-    margin: auto;  
+    padding: 0px;
+    margin: 0px;
     
 }
 .row{
     padding-left:8% ;
     width: 457.6px;
     height: 660px;
-    position: relative;
-    left: -40px;
 }
 .column{
     justify-content: center;
@@ -203,9 +205,6 @@ aside{
     padding-left: 10%;
     width: 464px;
     height:266px ;
-    position: relative;
-    left: -40px;
-    
 }
 .parrafo{
     width: 29rem;
@@ -548,9 +547,11 @@ footer p1{
         clip-path:polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
     }
      iframe{
-        width: 85%;
-        height: 15rem;
-        margin-left: 2%;
+        width: 100%;
+        height: 235px;
+        margin-left: 3%;
+        position: relative;
+        top: 140px;
      }
     main #ep{
         font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -580,17 +581,10 @@ footer p1{
         height: 3.125rem;
        
     }
-    div .imagenes{
+    .imagenes{
         display: block;
-        justify-content: space-evenly;  
+        
     }
-     div img{
-        width: 18.625rem; 
-        height:13.75rem;
-        padding: 0.625rem;
-        margin: 0;
-    }
-
     /* *** Imágen con texto*** */
 
     aside{
@@ -599,21 +593,22 @@ footer p1{
         position: relative; z-index:1 ;/* desplazamiento en el eje y de la seccion aside*/
         top: -8.5rem;
     }
-    div .contenedor03{
+    .contenedor03{
         display: block;
     }
     .row img{
         width:20rem;
-        height: 32.4375rem;    
+        height: 32.4375rem; 
+        position: relative;   
+        left: -25px;
     }
     .row{
         width: 360px;
         height: 32.4375rem; 
     }
     .column{
-        justify-content: center;
-        align-self: center;
-        padding-left: 10%;
+        position: relative;
+        left: -30px;
     }
     .parrafo{
         width: 18rem;
