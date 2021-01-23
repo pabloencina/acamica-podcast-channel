@@ -128,7 +128,7 @@ div p {
     width: 50vw;
     height: 10vh;
     position: relative;
-    top: -20px;
+    top: -1.25rem;
     font-family: 'IBM Plex Mono', monospace;
 }
 #boton{
@@ -166,7 +166,7 @@ main{
     padding: 0;
     margin: 0px;
     position: relative;
-    top: -200px;
+    top: -12.5rem;
     
     
 }
@@ -196,22 +196,22 @@ aside{
 }
 .row{
     padding-left:8% ;
-    width: 457.6px;
-    height: 660px;
+    width: 28.6rem;
+    height: 41.25rem;
 }
 .column{
     justify-content: center;
     align-self: center;
     padding-left: 10%;
-    width: 464px;
-    height:266px ;
+    width: 29rem;
+    height:16.625rem ;
 }
 .parrafo{
     width: 29rem;
     height: 12.75rem;
     position: relative;
-    left: 15px;
-    top: 20px;
+    left: 0.9375rem;
+    top: 1.25rem;
 }
 #titulo{
     width: 24.9375rem;
@@ -277,7 +277,7 @@ article{
     height: 3.875rem;
     position: relative;
     margin: 0px;
-    left: 20px;
+    left: 1.25rem;
     display:inline; 
 }
 .descr{
@@ -286,9 +286,9 @@ article{
     color: #060A24;
     letter-spacing: 0;
     position: relative;
-    left: 50px;
-    width: 40px;
-    height: 80px;
+    left: 3.125rem;
+    width: 2.5rem;
+    height: 5rem;
     margin: auto; 
     font-weight:bold;
     
@@ -358,6 +358,9 @@ article{
     margin-right: auto;
     margin-left: auto; 
 }
+#esc:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
 footer{
     grid-area: footer;
     
@@ -387,7 +390,7 @@ footer p1{
 }
 
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 20rem){
 
     *{
         margin: 0px;
@@ -400,7 +403,7 @@ footer p1{
     /***** Menú hamburguesa/ barra de navegación************/
     nav{
         width: 100%;
-        height: 60px;
+        height: 3.75rem;
     }
     #chek{
         display: flex;
@@ -415,12 +418,12 @@ footer p1{
         align-items: flex-start;
     }
     .icono{
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
     }
     #dib{
-        width: 34px;
-        height: 34px;
+        width: 2.125rem;
+        height: 2.125rem;
         margin: 0;
         padding: 0;
         display: flex;
@@ -428,25 +431,25 @@ footer p1{
     #la-btn{
         position: relative;
         top: 0px;
-        right: 20px;
+        right: 1.25rem;
         padding: 0;
         margin: 0;
     }
      nav label{
          display: block;
-        width: 30px;
-        height: 30px;
-        padding: 10px;
+        width: 1.875rem;
+        height: 1.875rem;
+        padding: 0.625rem;
     }
     .cont{
          display: block;
-         width: 320px;
-         height: 214px;
+         width: 20rem;
+         height: 13.375rem;
          background: #0000EC;
-         margin-right: -320px;
+         margin-right: -20rem;
          padding: 0%;
          position: absolute; z-index:1 ;/*desplazamiento en el eje y de la seccion section*/
-         top: 60px;
+         top: 3.75rem;
          
     }
      .cont ul{
@@ -455,7 +458,7 @@ footer p1{
     }
     .cont li a {
         display: block;
-        padding: 15px 20px ;
+        padding: 0.9375rem 1.25rem ;
         color: white;
     }
     #btn-menu{
@@ -486,7 +489,7 @@ footer p1{
         color: #060A24;
         letter-spacing:0;
         margin-left: 2%;
-        height: 42px;
+        height: 2.625rem;
     }
     .header{
         
@@ -501,8 +504,8 @@ footer p1{
     #world{
         text-decoration: line-through;
         line-height: 5em;
-        height:42px ;
-        width: 101px;
+        height:2.625rem ;
+        width: 6.3125rem;
     }
     #inform{
         width: 100%;
@@ -551,10 +554,10 @@ footer p1{
     }
      iframe{
         width: 100%;
-        height: 235px;
+        height: 14.6875rem;
         margin-left: 3%;
         position: relative;
-        top: 140px;
+        top: 8.75rem;
      }
     main #ep{
         font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -603,15 +606,15 @@ footer p1{
         width:20rem;
         height: 32.4375rem; 
         position: relative;   
-        left: -25px;
+        left: -1.5625rem;
     }
     .row{
-        width: 360px;
+        width: 22.5rem;
         height: 32.4375rem; 
     }
     .column{
         position: relative;
-        left: -30px;
+        left: -1.875rem;
     }
     .parrafo{
         width: 18rem;
@@ -653,7 +656,7 @@ footer p1{
         width: 17.1875rem;
         height: 5.625rem;
         position: relative;
-        left: -30px;
+        left: -1.875rem;
     } 
      .invitados img{
         display: block;
@@ -670,7 +673,7 @@ footer p1{
         width: 100%;
         display:flex;
         flex-wrap: wrap;
-        height:700px;
+        height:43.75rem;
         align-items:flex-end;
         justify-content: space-evenly;  
         padding: 0;
@@ -678,10 +681,10 @@ footer p1{
     }
     .tem{
         display: block;
-        width: 275px;
-        height: 120px;
+        width: 17.1875rem;
+        height: 7.5rem;
         position: relative;
-        top: -150px;
+        top: -9.375rem;
     }
     #temas{
         grid-area: temas;
@@ -689,8 +692,8 @@ footer p1{
         font-size: 2.25rem;
         color: #060A24;
         letter-spacing: 0;
-        width: 275px; ;
-        height: 100px;
+        width: 17.1875rem; ;
+        height: 6.25rem;
         display:inline;  
     }
     .caja1{
@@ -699,14 +702,14 @@ footer p1{
         left: 0px;
     }
     .imagen{
-        width: 104px;
-        height: 104px;
+        width: 6.5rem;
+        height: 6.5rem;
         display: block;
-        padding-left: 10px; 
+        padding-left: 0.625rem; 
      }
     .descr{
         font-family: 'IBM Plex Sans Condensed', sans-serif;
-        font-size: 24px;
+        font-size: 1.5rem;
         color: #060A24;
         letter-spacing: 0;
         display: flex;
@@ -721,12 +724,12 @@ footer p1{
     #contenedor2{
         grid-area: contenedor2;
         width: 100%;
-       height:290px ;
+       height:18.125rem ;
        display: flex;
        clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
        position: relative;
-       top: -50px;
+       top: -3.125rem;
    }
    .novedades{
        color: white;
@@ -738,41 +741,44 @@ footer p1{
     #cont2 h1{
         position: relative;
         font-size:2em ;
-        top: -50px;
+        top: -3.125rem;
     }
    #cont2{
-       width: 288px;
-       height: 300px;
-       font-size: 24px;
+       width: 18rem;
+       height: 18.75rem;
+       font-size: 1.5rem;
        color: #FFFFFF;
        letter-spacing: 0;
        text-align: center;
        margin-right: auto;
        margin-left: auto;
        font-family: 'IBM Plex Sans Condensed';  
-       line-height: 42px;
-       margin-top: 500px;
+       line-height: 2.625rem;
+       margin-top: 31.25rem;
    }
    #escucha{
         position: relative;
-        top:-70px ;
+        top:-4.375rem ;
    }
    #esc{
        background-color: #00f3bb;
        display: flex;
        justify-content: center;
-       width: 288px;
-       height: 48px;
+       width: 18rem;
+       height: 3rem;
        font-family: 'IBM Plex Mono', medium;
        color: #060A24;
-       font-size: 18px;
+       font-size: 1.125rem;
        letter-spacing: 0px;
        text-align: center;
-       line-height: 24px;   
-       margin-top: 50px;
+       line-height: 1.5rem;   
+       margin-top: 3.125rem;
        margin-right: auto;
        margin-left: auto;
    }
+   #esc:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
    /* ***Footer *** */
 
    footer{
@@ -782,7 +788,7 @@ footer p1{
         flex-wrap: wrap;
         text-align: center;
         width: 100%;
-        height:30px ;
+        height:1.875rem ;
         padding: 0;
         margin: 0;
         position: relative;
@@ -797,11 +803,11 @@ footer p1{
         width:14.1875rem ;
         height: 1.375rem;
         position: relative;
-        top: -40px;
-        left: 65px;
+        top: -2.5rem;
+        left: 4.0625rem;
     }
     .fab{
-        width: 20px;
+        width: 1.25rem;
         height: 1.75rem; 
         padding-right: 5vw;
         display: inline;
@@ -811,6 +817,6 @@ footer p1{
         justify-content: center;
         text-align: center;
         position: relative;
-        top: -30px;
+        top: -1.875rem;
     }
 }
