@@ -64,13 +64,13 @@ label{
 .cont li a:hover{
     font-size: 1rem;
     letter-spacing: 0;
-    line-height: 1.75rem;
     text-decoration: line-through;
-    line-height: 5em; 
+    line-height: 1em; 
     color: #00F3BB; 
 }
 .cont li a:active{
     text-decoration: line-through;
+    color: #060A24;
 }
 #icncont{
     width: 40%;
@@ -420,6 +420,9 @@ footer p1{
     .icono{
         width: 1.25rem;
         height: 1.25rem;
+        position: relative;
+        top: 15px;
+        left: 10px;
     }
     #dib{
         width: 2.125rem;
@@ -427,6 +430,8 @@ footer p1{
         margin: 0;
         padding: 0;
         display: flex;
+        position: relative;
+        top: 5px;
     }
     #la-btn{
         position: relative;
@@ -500,6 +505,8 @@ footer p1{
         font-size: 4em;
         letter-spacing: 0; 
         color: black;
+        position: relative;
+        top: -30px;
     }
     #world{
         text-decoration: line-through;
@@ -512,6 +519,10 @@ footer p1{
         height: 4.375rem;
         margin: 0.1875rem;
         padding-right: 0.1875rem;
+    }
+    #pale{
+        position: relative;
+        top: -30px;
     }
     div p {
         margin-left: 2%;
@@ -715,7 +726,9 @@ footer p1{
         display: flex;
         align-items: center;
         text-align: center;
-        width: 100%;
+        position: relative;
+        left: 10px;
+        width: 50%;
         height: 4rem;
     }  
 
