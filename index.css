@@ -167,7 +167,8 @@ main{
     margin: 0px;
     position: relative;
     top: -12.5rem;
-    
+    background-color: transparent;
+    border: transparent;
     
 }
 main #ep{
